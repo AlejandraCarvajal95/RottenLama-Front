@@ -130,3 +130,56 @@ body {
     background: rgba(255, 255, 255, 0.4);
     transform: scale(1.05);
 }
+
+/* Contenedor de búsqueda + dropdown */
+.search-container {
+    position: relative;
+    width: 180px;
+}
+
+/* Estilo del input, igual que search-bar */
+.search-input {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Dropdown de sugerencias */
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.resultado-titulo {
+    margin-top: 120px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
